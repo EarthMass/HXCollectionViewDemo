@@ -18,8 +18,13 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-//    ViewController * viewC = [[ ViewController alloc] init];
-    ViewController * viewC = [[NSClassFromString(@"HXHorCardVC") alloc] init];
+#if !DEBUG
+     ViewController * viewC = [[NSClassFromString(@"HXAutoSizeVC") alloc] init];
+#else
+    ViewController * viewC = [[ ViewController alloc] init];
+#endif
+    
+   
     
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:viewC];
     
