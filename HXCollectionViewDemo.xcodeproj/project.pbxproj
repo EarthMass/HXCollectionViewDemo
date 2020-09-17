@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA211E11250A0EC0007E1149 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA211E10250A0EC0007E1149 /* AppDelegate.m */; };
+		BA211E17250A0EC0007E1149 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA211E16250A0EC0007E1149 /* ViewController.m */; };
+		BA211E1A250A0EC0007E1149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA211E18250A0EC0007E1149 /* Main.storyboard */; };
+		BA211E1C250A0EC6007E1149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA211E1B250A0EC6007E1149 /* Assets.xcassets */; };
+		BA211E1F250A0EC6007E1149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA211E1D250A0EC6007E1149 /* LaunchScreen.storyboard */; };
+		BA211E22250A0EC6007E1149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA211E21250A0EC6007E1149 /* main.m */; };
+		BA211E2D250A11B0007E1149 /* HXCollectionViewNormalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA211E2C250A11B0007E1149 /* HXCollectionViewNormalVC.m */; };
+		BA211E30250A2532007E1149 /* HXNormalCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA211E2F250A2532007E1149 /* HXNormalCollectionCell.m */; };
+		BA4E780A250B6CB7003C5AA1 /* HXCusSectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4E7809250B6CB7003C5AA1 /* HXCusSectionVC.m */; };
+		BA4E780D250B7D07003C5AA1 /* CusSectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4E780C250B7D07003C5AA1 /* CusSectionLayout.m */; };
+		BA4E7810250B7FFB003C5AA1 /* HXCusSecReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4E780F250B7FFB003C5AA1 /* HXCusSecReusableView.m */; };
+		BA598D8F250CF612000F602B /* HXCycleCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA598D8E250CF612000F602B /* HXCycleCollectionViewVC.m */; };
+		BA598D92250CF691000F602B /* HXCycleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BA598D91250CF691000F602B /* HXCycleLayout.m */; };
+		BA598D96250DF37E000F602B /* HXHorCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA598D95250DF37E000F602B /* HXHorCardVC.m */; };
+		BA598D99250DF41E000F602B /* HXHorCardFlowout.m in Sources */ = {isa = PBXBuildFile; fileRef = BA598D98250DF41E000F602B /* HXHorCardFlowout.m */; };
+		DCCEA05E792D066B927A7653 /* libPods-HXCollectionViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA6B34BEFD4A80715FBEF1 /* libPods-HXCollectionViewDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0190918BDA583991EBE34EDE /* Pods-HXCollectionViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXCollectionViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-HXCollectionViewDemo/Pods-HXCollectionViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BA211E0C250A0EC0007E1149 /* HXCollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXCollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA211E0F250A0EC0007E1149 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA211E10250A0EC0007E1149 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA211E15250A0EC0007E1149 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA211E16250A0EC0007E1149 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA211E19250A0EC0007E1149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA211E1B250A0EC6007E1149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA211E1E250A0EC6007E1149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA211E20250A0EC6007E1149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA211E21250A0EC6007E1149 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA211E2A250A1112007E1149 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BA211E2B250A11B0007E1149 /* HXCollectionViewNormalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCollectionViewNormalVC.h; sourceTree = "<group>"; };
+		BA211E2C250A11B0007E1149 /* HXCollectionViewNormalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCollectionViewNormalVC.m; sourceTree = "<group>"; };
+		BA211E2E250A2532007E1149 /* HXNormalCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXNormalCollectionCell.h; sourceTree = "<group>"; };
+		BA211E2F250A2532007E1149 /* HXNormalCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXNormalCollectionCell.m; sourceTree = "<group>"; };
+		BA4E7808250B6CB7003C5AA1 /* HXCusSectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCusSectionVC.h; sourceTree = "<group>"; };
+		BA4E7809250B6CB7003C5AA1 /* HXCusSectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCusSectionVC.m; sourceTree = "<group>"; };
+		BA4E780B250B7D07003C5AA1 /* CusSectionLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusSectionLayout.h; sourceTree = "<group>"; };
+		BA4E780C250B7D07003C5AA1 /* CusSectionLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusSectionLayout.m; sourceTree = "<group>"; };
+		BA4E780E250B7FFB003C5AA1 /* HXCusSecReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCusSecReusableView.h; sourceTree = "<group>"; };
+		BA4E780F250B7FFB003C5AA1 /* HXCusSecReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCusSecReusableView.m; sourceTree = "<group>"; };
+		BA598D8D250CF612000F602B /* HXCycleCollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCycleCollectionViewVC.h; sourceTree = "<group>"; };
+		BA598D8E250CF612000F602B /* HXCycleCollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCycleCollectionViewVC.m; sourceTree = "<group>"; };
+		BA598D90250CF691000F602B /* HXCycleLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCycleLayout.h; sourceTree = "<group>"; };
+		BA598D91250CF691000F602B /* HXCycleLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCycleLayout.m; sourceTree = "<group>"; };
+		BA598D94250DF37E000F602B /* HXHorCardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHorCardVC.h; sourceTree = "<group>"; };
+		BA598D95250DF37E000F602B /* HXHorCardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHorCardVC.m; sourceTree = "<group>"; };
+		BA598D97250DF41E000F602B /* HXHorCardFlowout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHorCardFlowout.h; sourceTree = "<group>"; };
+		BA598D98250DF41E000F602B /* HXHorCardFlowout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHorCardFlowout.m; sourceTree = "<group>"; };
+		D78423E27B97E4FC98872E4B /* Pods-HXCollectionViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXCollectionViewDemo.release.xcconfig"; path = "Target Support Files/Pods-HXCollectionViewDemo/Pods-HXCollectionViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EBAA6B34BEFD4A80715FBEF1 /* libPods-HXCollectionViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXCollectionViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA211E09250A0EC0007E1149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCEA05E792D066B927A7653 /* libPods-HXCollectionViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E085C6518A922695F2F6BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0190918BDA583991EBE34EDE /* Pods-HXCollectionViewDemo.debug.xcconfig */,
+				D78423E27B97E4FC98872E4B /* Pods-HXCollectionViewDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		86ED3CABF3D25FAAD96D6ADB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA6B34BEFD4A80715FBEF1 /* libPods-HXCollectionViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA211E03250A0EC0007E1149 = {
+			isa = PBXGroup;
+			children = (
+				BA211E0E250A0EC0007E1149 /* HXCollectionViewDemo */,
+				BA211E0D250A0EC0007E1149 /* Products */,
+				03E085C6518A922695F2F6BD /* Pods */,
+				86ED3CABF3D25FAAD96D6ADB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BA211E0D250A0EC0007E1149 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA211E0C250A0EC0007E1149 /* HXCollectionViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA211E0E250A0EC0007E1149 /* HXCollectionViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BA211E0F250A0EC0007E1149 /* AppDelegate.h */,
+				BA211E10250A0EC0007E1149 /* AppDelegate.m */,
+				BA211E15250A0EC0007E1149 /* ViewController.h */,
+				BA211E16250A0EC0007E1149 /* ViewController.m */,
+				BA211E28250A102A007E1149 /* Demo */,
+				BA211E18250A0EC0007E1149 /* Main.storyboard */,
+				BA211E1B250A0EC6007E1149 /* Assets.xcassets */,
+				BA211E1D250A0EC6007E1149 /* LaunchScreen.storyboard */,
+				BA211E20250A0EC6007E1149 /* Info.plist */,
+				BA211E21250A0EC6007E1149 /* main.m */,
+				BA211E2A250A1112007E1149 /* PrefixHeader.pch */,
+			);
+			path = HXCollectionViewDemo;
+			sourceTree = "<group>";
+		};
+		BA211E28250A102A007E1149 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BA598D93250DF355000F602B /* HorChange */,
+				BA598D8C250CF5F8000F602B /* Cycle */,
+				BA211E29250A108B007E1149 /* normal */,
+				BA211E31250A26EE007E1149 /* CusSectionShow */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		BA211E29250A108B007E1149 /* normal */ = {
+			isa = PBXGroup;
+			children = (
+				BA211E2B250A11B0007E1149 /* HXCollectionViewNormalVC.h */,
+				BA211E2C250A11B0007E1149 /* HXCollectionViewNormalVC.m */,
+				BA211E2E250A2532007E1149 /* HXNormalCollectionCell.h */,
+				BA211E2F250A2532007E1149 /* HXNormalCollectionCell.m */,
+			);
+			path = normal;
+			sourceTree = "<group>";
+		};
+		BA211E31250A26EE007E1149 /* CusSectionShow */ = {
+			isa = PBXGroup;
+			children = (
+				BA4E7808250B6CB7003C5AA1 /* HXCusSectionVC.h */,
+				BA4E7809250B6CB7003C5AA1 /* HXCusSectionVC.m */,
+				BA4E780B250B7D07003C5AA1 /* CusSectionLayout.h */,
+				BA4E780C250B7D07003C5AA1 /* CusSectionLayout.m */,
+				BA4E780E250B7FFB003C5AA1 /* HXCusSecReusableView.h */,
+				BA4E780F250B7FFB003C5AA1 /* HXCusSecReusableView.m */,
+			);
+			path = CusSectionShow;
+			sourceTree = "<group>";
+		};
+		BA598D8C250CF5F8000F602B /* Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				BA598D8D250CF612000F602B /* HXCycleCollectionViewVC.h */,
+				BA598D8E250CF612000F602B /* HXCycleCollectionViewVC.m */,
+				BA598D90250CF691000F602B /* HXCycleLayout.h */,
+				BA598D91250CF691000F602B /* HXCycleLayout.m */,
+			);
+			path = Cycle;
+			sourceTree = "<group>";
+		};
+		BA598D93250DF355000F602B /* HorChange */ = {
+			isa = PBXGroup;
+			children = (
+				BA598D94250DF37E000F602B /* HXHorCardVC.h */,
+				BA598D95250DF37E000F602B /* HXHorCardVC.m */,
+				BA598D97250DF41E000F602B /* HXHorCardFlowout.h */,
+				BA598D98250DF41E000F602B /* HXHorCardFlowout.m */,
+			);
+			path = HorChange;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA211E0B250A0EC0007E1149 /* HXCollectionViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA211E25250A0EC6007E1149 /* Build configuration list for PBXNativeTarget "HXCollectionViewDemo" */;
+			buildPhases = (
+				643BF7E90503D5F7238B7595 /* [CP] Check Pods Manifest.lock */,
+				BA211E08250A0EC0007E1149 /* Sources */,
+				BA211E09250A0EC0007E1149 /* Frameworks */,
+				BA211E0A250A0EC0007E1149 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HXCollectionViewDemo;
+			productName = HXCollectionViewDemo;
+			productReference = BA211E0C250A0EC0007E1149 /* HXCollectionViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA211E04250A0EC0007E1149 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = BroSis;
+				TargetAttributes = {
+					BA211E0B250A0EC0007E1149 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = BA211E07250A0EC0007E1149 /* Build configuration list for PBXProject "HXCollectionViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA211E03250A0EC0007E1149;
+			productRefGroup = BA211E0D250A0EC0007E1149 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA211E0B250A0EC0007E1149 /* HXCollectionViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA211E0A250A0EC0007E1149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA211E1F250A0EC6007E1149 /* LaunchScreen.storyboard in Resources */,
+				BA211E1C250A0EC6007E1149 /* Assets.xcassets in Resources */,
+				BA211E1A250A0EC0007E1149 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		643BF7E90503D5F7238B7595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HXCollectionViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA211E08250A0EC0007E1149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA598D99250DF41E000F602B /* HXHorCardFlowout.m in Sources */,
+				BA211E17250A0EC0007E1149 /* ViewController.m in Sources */,
+				BA4E780D250B7D07003C5AA1 /* CusSectionLayout.m in Sources */,
+				BA598D92250CF691000F602B /* HXCycleLayout.m in Sources */,
+				BA211E11250A0EC0007E1149 /* AppDelegate.m in Sources */,
+				BA4E780A250B6CB7003C5AA1 /* HXCusSectionVC.m in Sources */,
+				BA598D96250DF37E000F602B /* HXHorCardVC.m in Sources */,
+				BA598D8F250CF612000F602B /* HXCycleCollectionViewVC.m in Sources */,
+				BA211E2D250A11B0007E1149 /* HXCollectionViewNormalVC.m in Sources */,
+				BA4E7810250B7FFB003C5AA1 /* HXCusSecReusableView.m in Sources */,
+				BA211E30250A2532007E1149 /* HXNormalCollectionCell.m in Sources */,
+				BA211E22250A0EC6007E1149 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BA211E18250A0EC0007E1149 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA211E19250A0EC0007E1149 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA211E1D250A0EC6007E1149 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA211E1E250A0EC6007E1149 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA211E23250A0EC6007E1149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA211E24250A0EC6007E1149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA211E26250A0EC6007E1149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0190918BDA583991EBE34EDE /* Pods-HXCollectionViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = HXCollectionViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghx.test.HXCollectionViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA211E27250A0EC6007E1149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78423E27B97E4FC98872E4B /* Pods-HXCollectionViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
+				INFOPLIST_FILE = HXCollectionViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghx.test.HXCollectionViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA211E07250A0EC0007E1149 /* Build configuration list for PBXProject "HXCollectionViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA211E23250A0EC6007E1149 /* Debug */,
+				BA211E24250A0EC6007E1149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA211E25250A0EC6007E1149 /* Build configuration list for PBXNativeTarget "HXCollectionViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA211E26250A0EC6007E1149 /* Debug */,
+				BA211E27250A0EC6007E1149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA211E04250A0EC0007E1149 /* Project object */;
+}

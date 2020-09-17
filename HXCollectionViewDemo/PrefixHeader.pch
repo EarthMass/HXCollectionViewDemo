@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  HXCollectionViewDemo
+//
+//  Created by ghx on 2020/9/10.
+//  Copyright © 2020 BroSis. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+
+#pragma mark- 尺寸适配宏
+
+//判断是否是ipad
+#define kIsPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+
+#define IS_INPHONEX_LATER  (([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896 || [UIScreen mainScreen].bounds.size.height > 812) && !kIsPad)
+
+//iPhoneX系列
+#define kStatusBar_Height (IS_INPHONEX_LATER ? 44.0 : 20.0)
+#define kNavBar_Height (IS_INPHONEX_LATER ? 88.0 : 64.0)
+#define kNavBarNoStatusBar_Height (kNavBar_Height - kStatusBar_Height)
+#define kTabBar_Height (IS_INPHONEX_LATER ? 83.0 : 49.0)
+#define kSafeArea_Height (IS_INPHONEX_LATER ? 34.f : 0.f) //底部安全区域
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#endif /* PrefixHeader_pch */
