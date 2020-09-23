@@ -15,16 +15,8 @@
 		BA211E22250A0EC6007E1149 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA211E21250A0EC6007E1149 /* main.m */; };
 		BA211E2D250A11B0007E1149 /* HXCollectionViewNormalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA211E2C250A11B0007E1149 /* HXCollectionViewNormalVC.m */; };
 		BA211E30250A2532007E1149 /* HXNormalCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA211E2F250A2532007E1149 /* HXNormalCollectionCell.m */; };
-
-		BA4ABE94251B1DBF0006DF28 /* HXAutoFitLabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4ABE93251B1DBF0006DF28 /* HXAutoFitLabVC.m */; };
-		BA4ABE97251B1DFC0006DF28 /* HXAutoSizeFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4ABE96251B1DFC0006DF28 /* HXAutoSizeFlow.m */; };
-		BA4ABE9A251B1E830006DF28 /* HXAutoFitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4ABE99251B1E830006DF28 /* HXAutoFitCell.m */; };
-
 		BA4416982513A9D500F38765 /* HXCardCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4416972513A9D500F38765 /* HXCardCollectionVC.m */; };
 		BA44169B2513AA4B00F38765 /* HXCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44169A2513AA4B00F38765 /* HXCardLayout.m */; };
-		BA44169F2513B00000F38765 /* HXAutoSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44169E2513B00000F38765 /* HXAutoSizeVC.m */; };
-		BA4416A22513B02800F38765 /* HXAutoSizeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4416A12513B02800F38765 /* HXAutoSizeLayout.m */; };
-
 		BA4E780A250B6CB7003C5AA1 /* HXCusSectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4E7809250B6CB7003C5AA1 /* HXCusSectionVC.m */; };
 		BA4E780D250B7D07003C5AA1 /* CusSectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4E780C250B7D07003C5AA1 /* CusSectionLayout.m */; };
 		BA4E7810250B7FFB003C5AA1 /* HXCusSecReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4E780F250B7FFB003C5AA1 /* HXCusSecReusableView.m */; };
@@ -32,6 +24,9 @@
 		BA598D92250CF691000F602B /* HXCycleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BA598D91250CF691000F602B /* HXCycleLayout.m */; };
 		BA598D96250DF37E000F602B /* HXHorCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA598D95250DF37E000F602B /* HXHorCardVC.m */; };
 		BA598D99250DF41E000F602B /* HXHorCardFlowout.m in Sources */ = {isa = PBXBuildFile; fileRef = BA598D98250DF41E000F602B /* HXHorCardFlowout.m */; };
+		BA80914B251B50E200957F9A /* HXAutoFitLabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA809143251B4FC300957F9A /* HXAutoFitLabVC.m */; };
+		BA80914C251B50E400957F9A /* HXAutoFitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA809144251B4FC300957F9A /* HXAutoFitCell.m */; };
+		BA80914D251B50E800957F9A /* HXAutoSizeFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = BA809146251B4FC300957F9A /* HXAutoSizeFlow.m */; };
 		DCCEA05E792D066B927A7653 /* libPods-HXCollectionViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA6B34BEFD4A80715FBEF1 /* libPods-HXCollectionViewDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -52,23 +47,10 @@
 		BA211E2C250A11B0007E1149 /* HXCollectionViewNormalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCollectionViewNormalVC.m; sourceTree = "<group>"; };
 		BA211E2E250A2532007E1149 /* HXNormalCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXNormalCollectionCell.h; sourceTree = "<group>"; };
 		BA211E2F250A2532007E1149 /* HXNormalCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXNormalCollectionCell.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		BA4ABE92251B1DBF0006DF28 /* HXAutoFitLabVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAutoFitLabVC.h; sourceTree = "<group>"; };
-		BA4ABE93251B1DBF0006DF28 /* HXAutoFitLabVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAutoFitLabVC.m; sourceTree = "<group>"; };
-		BA4ABE95251B1DFC0006DF28 /* HXAutoSizeFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAutoSizeFlow.h; sourceTree = "<group>"; };
-		BA4ABE96251B1DFC0006DF28 /* HXAutoSizeFlow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAutoSizeFlow.m; sourceTree = "<group>"; };
-		BA4ABE98251B1E830006DF28 /* HXAutoFitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAutoFitCell.h; sourceTree = "<group>"; };
-		BA4ABE99251B1E830006DF28 /* HXAutoFitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAutoFitCell.m; sourceTree = "<group>"; };
-
 		BA4416962513A9D500F38765 /* HXCardCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCardCollectionVC.h; sourceTree = "<group>"; };
 		BA4416972513A9D500F38765 /* HXCardCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCardCollectionVC.m; sourceTree = "<group>"; };
 		BA4416992513AA4B00F38765 /* HXCardLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCardLayout.h; sourceTree = "<group>"; };
 		BA44169A2513AA4B00F38765 /* HXCardLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCardLayout.m; sourceTree = "<group>"; };
-		BA44169D2513B00000F38765 /* HXAutoSizeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAutoSizeVC.h; sourceTree = "<group>"; };
-		BA44169E2513B00000F38765 /* HXAutoSizeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAutoSizeVC.m; sourceTree = "<group>"; };
-		BA4416A02513B02800F38765 /* HXAutoSizeLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAutoSizeLayout.h; sourceTree = "<group>"; };
-		BA4416A12513B02800F38765 /* HXAutoSizeLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAutoSizeLayout.m; sourceTree = "<group>"; };
->>>>>>> e0f47b048fe4a7787f28bb561d87f3dd9f3deb95
 		BA4E7808250B6CB7003C5AA1 /* HXCusSectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCusSectionVC.h; sourceTree = "<group>"; };
 		BA4E7809250B6CB7003C5AA1 /* HXCusSectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCusSectionVC.m; sourceTree = "<group>"; };
 		BA4E780B250B7D07003C5AA1 /* CusSectionLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusSectionLayout.h; sourceTree = "<group>"; };
@@ -83,6 +65,12 @@
 		BA598D95250DF37E000F602B /* HXHorCardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHorCardVC.m; sourceTree = "<group>"; };
 		BA598D97250DF41E000F602B /* HXHorCardFlowout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXHorCardFlowout.h; sourceTree = "<group>"; };
 		BA598D98250DF41E000F602B /* HXHorCardFlowout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXHorCardFlowout.m; sourceTree = "<group>"; };
+		BA809142251B4FC300957F9A /* HXAutoSizeFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAutoSizeFlow.h; sourceTree = "<group>"; };
+		BA809143251B4FC300957F9A /* HXAutoFitLabVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAutoFitLabVC.m; sourceTree = "<group>"; };
+		BA809144251B4FC300957F9A /* HXAutoFitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAutoFitCell.m; sourceTree = "<group>"; };
+		BA809145251B4FC300957F9A /* HXAutoFitLabVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAutoFitLabVC.h; sourceTree = "<group>"; };
+		BA809146251B4FC300957F9A /* HXAutoSizeFlow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXAutoSizeFlow.m; sourceTree = "<group>"; };
+		BA809147251B4FC300957F9A /* HXAutoFitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXAutoFitCell.h; sourceTree = "<group>"; };
 		D78423E27B97E4FC98872E4B /* Pods-HXCollectionViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXCollectionViewDemo.release.xcconfig"; path = "Target Support Files/Pods-HXCollectionViewDemo/Pods-HXCollectionViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EBAA6B34BEFD4A80715FBEF1 /* libPods-HXCollectionViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HXCollectionViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -155,12 +143,8 @@
 		BA211E28250A102A007E1149 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-
-				BA4ABE91251B1D740006DF28 /* AutoFit */,
-
-				BA44169C2513AFBC00F38765 /* AutoFlowout */,
+				BA809141251B4FC300957F9A /* AutoFit */,
 				BA4416952513A9AF00F38765 /* Card */,
-
 				BA598D93250DF355000F602B /* HorChange */,
 				BA598D8C250CF5F8000F602B /* Cycle */,
 				BA211E29250A108B007E1149 /* normal */,
@@ -193,19 +177,6 @@
 			path = CusSectionShow;
 			sourceTree = "<group>";
 		};
-
-		BA4ABE91251B1D740006DF28 /* AutoFit */ = {
-			isa = PBXGroup;
-			children = (
-				BA4ABE92251B1DBF0006DF28 /* HXAutoFitLabVC.h */,
-				BA4ABE93251B1DBF0006DF28 /* HXAutoFitLabVC.m */,
-				BA4ABE95251B1DFC0006DF28 /* HXAutoSizeFlow.h */,
-				BA4ABE96251B1DFC0006DF28 /* HXAutoSizeFlow.m */,
-				BA4ABE98251B1E830006DF28 /* HXAutoFitCell.h */,
-				BA4ABE99251B1E830006DF28 /* HXAutoFitCell.m */,
-			);
-			path = AutoFit;
-
 		BA4416952513A9AF00F38765 /* Card */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,18 +186,6 @@
 				BA44169A2513AA4B00F38765 /* HXCardLayout.m */,
 			);
 			path = Card;
-			sourceTree = "<group>";
-		};
-		BA44169C2513AFBC00F38765 /* AutoFlowout */ = {
-			isa = PBXGroup;
-			children = (
-				BA44169D2513B00000F38765 /* HXAutoSizeVC.h */,
-				BA44169E2513B00000F38765 /* HXAutoSizeVC.m */,
-				BA4416A02513B02800F38765 /* HXAutoSizeLayout.h */,
-				BA4416A12513B02800F38765 /* HXAutoSizeLayout.m */,
-			);
-			path = AutoFlowout;
->>>>>>> e0f47b048fe4a7787f28bb561d87f3dd9f3deb95
 			sourceTree = "<group>";
 		};
 		BA598D8C250CF5F8000F602B /* Cycle */ = {
@@ -249,6 +208,19 @@
 				BA598D98250DF41E000F602B /* HXHorCardFlowout.m */,
 			);
 			path = HorChange;
+			sourceTree = "<group>";
+		};
+		BA809141251B4FC300957F9A /* AutoFit */ = {
+			isa = PBXGroup;
+			children = (
+				BA809145251B4FC300957F9A /* HXAutoFitLabVC.h */,
+				BA809143251B4FC300957F9A /* HXAutoFitLabVC.m */,
+				BA809147251B4FC300957F9A /* HXAutoFitCell.h */,
+				BA809144251B4FC300957F9A /* HXAutoFitCell.m */,
+				BA809142251B4FC300957F9A /* HXAutoSizeFlow.h */,
+				BA809146251B4FC300957F9A /* HXAutoSizeFlow.m */,
+			);
+			path = AutoFit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,26 +320,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA598D99250DF41E000F602B /* HXHorCardFlowout.m in Sources */,
-
-				BA4ABE97251B1DFC0006DF28 /* HXAutoSizeFlow.m in Sources */,
-				BA4ABE94251B1DBF0006DF28 /* HXAutoFitLabVC.m in Sources */,
-
 				BA211E17250A0EC0007E1149 /* ViewController.m in Sources */,
 				BA4E780D250B7D07003C5AA1 /* CusSectionLayout.m in Sources */,
 				BA598D92250CF691000F602B /* HXCycleLayout.m in Sources */,
 				BA211E11250A0EC0007E1149 /* AppDelegate.m in Sources */,
 				BA4E780A250B6CB7003C5AA1 /* HXCusSectionVC.m in Sources */,
+				BA80914C251B50E400957F9A /* HXAutoFitCell.m in Sources */,
 				BA598D96250DF37E000F602B /* HXHorCardVC.m in Sources */,
 				BA598D8F250CF612000F602B /* HXCycleCollectionViewVC.m in Sources */,
 				BA211E2D250A11B0007E1149 /* HXCollectionViewNormalVC.m in Sources */,
-
-				BA4ABE9A251B1E830006DF28 /* HXAutoFitCell.m in Sources */,
-
+				BA80914D251B50E800957F9A /* HXAutoSizeFlow.m in Sources */,
 				BA44169B2513AA4B00F38765 /* HXCardLayout.m in Sources */,
-
 				BA4E7810250B7FFB003C5AA1 /* HXCusSecReusableView.m in Sources */,
-				BA44169F2513B00000F38765 /* HXAutoSizeVC.m in Sources */,
 				BA211E30250A2532007E1149 /* HXNormalCollectionCell.m in Sources */,
+				BA80914B251B50E200957F9A /* HXAutoFitLabVC.m in Sources */,
 				BA211E22250A0EC6007E1149 /* main.m in Sources */,
 				BA4416982513A9D500F38765 /* HXCardCollectionVC.m in Sources */,
 			);
