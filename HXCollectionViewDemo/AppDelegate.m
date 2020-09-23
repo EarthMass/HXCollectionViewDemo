@@ -24,9 +24,13 @@
 #if Is_Debug
     ViewController * viewC = [[NSClassFromString(@"HXAutoFitLabVC") alloc] init];
     
+
+#if !DEBUG
+     ViewController * viewC = [[NSClassFromString(@"HXAutoSizeVC") alloc] init];
 #else
     ViewController * viewC = [[ ViewController alloc] init];
 #endif
+
     
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:viewC];
     
