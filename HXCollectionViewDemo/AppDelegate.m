@@ -12,14 +12,21 @@
 
 @end
 
+#define Is_Debug 1
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
     
-//    ViewController * viewC = [[ ViewController alloc] init];
-    ViewController * viewC = [[NSClassFromString(@"HXHorCardVC") alloc] init];
+#if Is_Debug
+    ViewController * viewC = [[NSClassFromString(@"HXAutoFitLabVC") alloc] init];
+    
+#else
+    ViewController * viewC = [[ ViewController alloc] init];
+#endif
     
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:viewC];
     

@@ -44,7 +44,8 @@
         ]},
         @{@"title":@"特殊显示",@"dataArr":@[
             @{@"vc":@"HXCycleCollectionViewVC",@"title":@"圆形显示"},
-            @{@"vc":@"HXHorCardVC",@"title":@"水平视差卡片"}
+            @{@"vc":@"HXHorCardVC",@"title":@"水平视差卡片"},
+            @{@"vc":@"HXAutoFitLabVC",@"title":@"自适应lab"}
         ]},
     ];
     
