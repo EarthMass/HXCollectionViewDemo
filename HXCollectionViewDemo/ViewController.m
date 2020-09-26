@@ -37,7 +37,7 @@
 - (void)initUI {
     
     self.dataArr =
-    @[
+    [NSMutableArray arrayWithArray:@[
         @{@"title":@"普通显示",@"dataArr":@[
             @{@"vc":@"HXCollectionViewNormalVC",@"title":@"普通"},
             @{@"vc":@"HXCusSectionVC",@"title":@"自定义section背景，圆角阴影"}
@@ -49,7 +49,8 @@
             @{@"vc":@"HXAutoFitLabVC",@"title":@"自适应lab"}
             
         ]},
-    ];
+    ]
+     ];
     
     [self.view addSubview:self.tableV];
     [_tableV mas_makeConstraints:^(MASConstraintMaker * make) {

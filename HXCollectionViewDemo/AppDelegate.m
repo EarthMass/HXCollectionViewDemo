@@ -10,6 +10,8 @@
 #import "ViewController.h"
 @interface AppDelegate ()
 
+@property (nonatomic, strong) NSString * aa;
+
 @end
 
 #define Is_Debug 1

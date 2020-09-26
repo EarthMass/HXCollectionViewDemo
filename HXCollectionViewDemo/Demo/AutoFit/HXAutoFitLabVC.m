@@ -16,6 +16,9 @@
 @property (nonatomic, strong) UICollectionView * collectioView;
 @property (nonatomic, strong) HXAutoSizeFlow * flowLayout;
 
+@property (nonatomic, strong) UIView * snapView; //移动的Cell
+
+
 @property (nonatomic, strong) UILongPressGestureRecognizer * longPress;
 @property (nonatomic, strong) UILongPressGestureRecognizer * longMovePress;
 
@@ -34,6 +37,13 @@
     
     //添加 长按抖动的手势
     [self addLongPress];
+    
+ 
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    [self.collectioView.collectionViewLayout invalidateLayout];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,8 +54,8 @@
 - (void)createUI {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    //数据源
-    self.dataArr = [NSMutableArray arrayWithArray:@[@"dabfda",@"123rrwrsaa",@"都好难打打死撒大风把",@"fadasd",@"但凡达到",@"第八发快递发送打赏发送打",@"打发撒",@"大发大发大发安抚as"]];
+    //数据源 第一个固定不能移动 先写死，后面可以通过数据来做处理
+    self.dataArr = [NSMutableArray arrayWithArray:@[@"dabfda",@"123rrwrsaa",@"都好难打打死撒大风把",@"fadasd",@"但凡达到",@"第八发快递发送打赏发送打",@"打发撒",@"大发大发大发安抚as",@"dabfda",@"123rrwrsaa",@"都好难打打死撒大风把",@"fadasd",@"但凡达到",@"第八发快递发送打赏发送打",@"打发撒",@"大发大发大发安抚as",@"dabfda",@"123rrwrsaa",@"都好难打打死撒大风把",@"fadasd",@"但凡达到",@"第八发快递发送打赏发送打",@"打发撒",@"大发大发大发安抚as"@"dabfda",@"123rrwrsaa",@"都好难打打死撒大风把",@"fadasd",@"但凡达到",@"第八发快递发送打赏发送打",@"打发撒",@"大发大发大发安抚as"@"dabfda",@"123rrwrsaa",@"都好难打打死撒大风把",@"fadasd",@"但凡达到",@"第八发快递发送打赏发送打",@"打发撒",@"大发大发大发安抚as"@"dabfda"]];
     
     
     
@@ -78,10 +88,14 @@
     HXAutoFitCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HXAutoFitCell" forIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor grayColor];//color;
-    cell.lab.text = self.dataArr[indexPath.row];
+    [cell setText: self.dataArr[indexPath.row]];
+   
     
     if (self.isEdit) {
-        [self sharkAnimation:cell];
+        if (indexPath.row != 0) {
+            [self sharkAnimation:cell];
+        }
+        
     } else {
         [self sharkEnd:cell];
     }
@@ -100,15 +114,17 @@
 }
 
 - (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        return NO;
+    }
     return YES;
 }
 - (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
-    //取出源item数据
-    id objc = [self.dataArr objectAtIndex:sourceIndexPath.item];
-    //从资源数组中移除该数据
-    [self.dataArr removeObject:objc];
-    //将数据插入到资源数组中的目标位置上
-    [self.dataArr insertObject:objc atIndex:destinationIndexPath.item];
+    
+    [self.dataArr exchangeObjectAtIndex:destinationIndexPath.item withObjectAtIndex:sourceIndexPath.item];
+    
+    
+    
 }
 #pragma mark- 手势操作
 #pragma mark 长按 移动操作
@@ -161,36 +177,49 @@
 }
 - (void)longMovePressAction:(UILongPressGestureRecognizer *)ges {
    UIGestureRecognizerState state = ges.state;
-    BOOL canMove = YES;
+//    BOOL canMove = YES;
+    
+    CGPoint touchPoint = [ges locationInView:self.collectioView];
+    NSIndexPath * touchIndex =  [self.collectioView indexPathForItemAtPoint:touchPoint];
+    HXAutoFitCell * cell = (HXAutoFitCell *)[self.collectioView cellForItemAtIndexPath:touchIndex];
+    
    switch (state) {
        case UIGestureRecognizerStateBegan:
        {
            //判断是否在当前cell的点击
-           NSIndexPath * touchIndex =  [self.collectioView indexPathForItemAtPoint:[ges locationInView:self.collectioView]];
-           if (touchIndex) {
+           if (touchIndex  && touchIndex.row != 0) {
                //开始交互 运动
                [self.collectioView beginInteractiveMovementForItemAtIndexPath:touchIndex];
+               //编辑当前项变大
+               [self addOpCellInCell:cell touchPoint:touchPoint];
+               
            }
            
        }
            break;
        case UIGestureRecognizerStateChanged:
        {
-           NSIndexPath * touchIndex =  [self.collectioView indexPathForItemAtPoint:[ges locationInView:self.collectioView]];
-           if (touchIndex) {
+           //这边可以加过滤条件
+           [self opCellMoveToPoint:touchPoint];
+           if (touchIndex  && touchIndex.row != 0) {
                [self.collectioView updateInteractiveMovementTargetPosition:[ges locationInView:self.collectioView]];
+               
            }
            
        }
            break;
        case UIGestureRecognizerStateEnded:
        {
+
            [self.collectioView endInteractiveMovement];
+           [self removeOpCellInCell:cell];
        }
            break;
            
        default: {
+
            [self.collectioView cancelInteractiveMovement];
+           [self removeOpCellInCell:cell];
        }
            break;
    }
@@ -211,6 +240,39 @@
     CABasicAnimation * shakeAnimation = [cell.layer animationForKey:@"CellShake"];
     if (shakeAnimation) {
         [cell.layer removeAnimationForKey:@"CellShake"];
+    }
+}
+
+- (void)addOpCellInCell:(UICollectionViewCell *)cell touchPoint:(CGPoint)touchPoint {
+    self.snapView = [cell snapshotViewAfterScreenUpdates:NO];
+    // 添加到 collectionView 不然无法显示
+    [self.collectioView addSubview:self.snapView];
+    // 设置frame
+    self.snapView.frame = cell.frame;
+    
+    // 截图后隐藏当前 cell
+    cell.hidden = YES;
+
+    // 动画放大和移动到触摸点下面
+    [UIView animateWithDuration:0.25 animations:^{
+        self.snapView.transform = CGAffineTransformMakeScale(1.5, 1.5);
+        self.snapView.center = CGPointMake(touchPoint.x, touchPoint.y);
+        self.snapView.alpha = 0.8;
+    }];
+}
+
+- (void)opCellMoveToPoint:(CGPoint)point {
+    // 截图视图位置移动
+    [UIView animateWithDuration:0.1 animations:^{
+        self.snapView.center = point;
+    }];
+}
+
+- (void)removeOpCellInCell:(UICollectionViewCell *)cell {
+    cell.hidden = NO;
+    if (self.snapView.superview) {
+        [self.snapView removeFromSuperview];
+        self.snapView = nil;
     }
 }
 
@@ -286,6 +348,15 @@
         _longMovePress.minimumPressDuration = 0.f;
     }
     return _longMovePress;
+}
+
+
+
+- (UIView *)snapView {
+    if (!_snapView) {
+        _snapView  = [[UIView alloc] init];
+    }
+    return _snapView;
 }
 
 @end

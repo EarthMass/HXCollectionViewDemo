@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// 自适应的lab
+/// 自适应的lab  updateInteractiveMovementTargetPosition iOS9+
 @interface HXAutoFitLabVC : UIViewController
 
 @end

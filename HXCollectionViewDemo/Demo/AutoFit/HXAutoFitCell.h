@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HXAutoFitCell : UICollectionViewCell
 
-@property (nonatomic, strong) UILabel * lab;
+- (void)setText:(NSString *)text;
 
 @end
 

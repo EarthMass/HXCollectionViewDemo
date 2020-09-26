@@ -16,11 +16,16 @@
     self.minimumLineSpacing = 10;
     self.minimumInteritemSpacing = 10;
     
-    if (@available(iOS 10.0, *)) {
-        self.estimatedItemSize=UICollectionViewFlowLayoutAutomaticSize;
-    } else {
-        self.estimatedItemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - self.sectionInset.left - self.sectionInset.right, 100);
-    }
+//    if (@available(iOS 10.0, *)) {
+//        self.estimatedItemSize=UICollectionViewFlowLayoutAutomaticSize;
+//    } else {
+//        self.estimatedItemSize=CGSizeMake(kScreenWidth, 26);
+//    }
+    //自适应重排 一直有问题不知道什么情况
+//    self.estimatedItemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - self.sectionInset.left - self.sectionInset.right, 100);
+    
+    //固定拖动不会有问题
+    self.itemSize = CGSizeMake(80, 40);
    
    
 }
